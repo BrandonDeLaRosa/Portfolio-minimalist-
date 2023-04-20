@@ -8,7 +8,7 @@ const Contact = ({ dark }) => {
 
             <div className='contactBox'>
 
-                <div class="form-control">
+                {/* <div class="form-control">
                     <div class="inputbox" id='inputName'>
                         <input required="required" type="text" />
                         <span>Name</span>
@@ -22,7 +22,30 @@ const Contact = ({ dark }) => {
                         <span>Email</span>
                         <i></i>
                     </div>
+                </div> */}
+
+
+
+                {/* <div class="inputGroup">
+                    <input type="text" required="" autocomplete="off"/>
+                        <label for="name">Name</label>
                 </div>
+
+                <div class="inputGroup">
+                    <input type="email" required="" autocomplete="off"/>
+                        <label for="name">Email</label>
+                </div> */}
+
+                <div class="form">
+                    <input class="input" placeholder="Name" required="" type="text" />
+                    <span class="input-border"></span>
+                </div>
+                <div class="form">
+                    <input class="input" placeholder="Email" required="" type="email" />
+                    <span class="input-border"></span>
+                </div>
+
+
                 <textarea className={dark ? 'formText' : 'lightFormText'} name="Message" rows={7} cols={35} placeholder='   Hey! let´s work together...' required></textarea>
 
                 <button className='submit' type="submit">

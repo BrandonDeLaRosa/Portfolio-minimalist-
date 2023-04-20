@@ -17,6 +17,19 @@ function App() {
   const [darkTheme, setDarkTheme] = useState(true)
   const [english, setEnglish] = useState(true)
 
+  const [toolsColor,setToolsColor] = useState(false)
+  window.addEventListener('scroll', () => {
+    
+    const scrollPX = window.scrollY;
+    console.log(scrollPX);
+
+    if(window.scrollY >= 2526){
+      setToolsColor(true)
+    }else{
+      setToolsColor(false)
+    }
+  })
+
   return (
     <div className={darkTheme ? "dark-mode" : "light-mode"}>
       <Link className='lightLogo' to='home'  smooth={true} duration={1000}><img className='logo' src={logo} alt="logo" /></Link>
@@ -30,12 +43,17 @@ function App() {
       </div>
 
       <div className='toolbar'>
-        <button className='toolbarElements' onClick={() => setDarkTheme(!darkTheme)}> {darkTheme ? <i id={darkTheme ? "dark" : "light"} class="fa-regular fa-sun"></i> : <i id={darkTheme ? "dark" : "light"} class="fa-solid fa-moon" ></i>}</button>
-        <button className='toolbarElements' onClick={() => setEnglish(!english)}><i id={darkTheme ? "dark" : "light"} class="fa-solid fa-language"></i></button>
-        <Link className='toolbarElements' to='home'  smooth={true} duration={1000}><i id={darkTheme ? "dark" : "light"} class="fa-solid fa-house"></i></Link>
-        <Link className='toolbarElements' to='skills' smooth={true} duration={1000}><i id={darkTheme ? "dark" : "light"} class="fa-solid fa-list-check"></i></Link>
-        <Link className='toolbarElements' to='projects' smooth={true} duration={1000}><i id={darkTheme ? "dark" : "light"} class="fa-solid fa-diagram-project"></i></Link>
-        <Link className='toolbarElements' to='contact' smooth={true} duration={1000}><i id={darkTheme ? "dark" : "light"} class="fa-solid fa-address-card"></i></Link>
+        <button className='toolbarElements' onClick={() => setDarkTheme(!darkTheme)}>
+          {darkTheme ? 
+          <i id={toolsColor ? "light" : "dark"} class="fa-regular fa-sun">
+          </i> : <i id={toolsColor ? "light" : "dark"} class="fa-solid fa-moon" ></i>
+          }
+        </button>
+        <button className='toolbarElements' onClick={() => setEnglish(!english)}><i id={toolsColor ? "light" : "dark"} class="fa-solid fa-language"></i></button>
+        <Link className='toolbarElements' to='home'  smooth={true} duration={1000}><i id={toolsColor ? "light" : "dark"} class="fa-solid fa-house"></i></Link>
+        <Link className='toolbarElements' to='skills' smooth={true} duration={1000}><i id={toolsColor? "light" : "dark"} class="fa-solid fa-list-check"></i></Link>
+        <Link className='toolbarElements' to='projects' smooth={true} duration={1000}><i id={toolsColor ? "light" : "dark"} class="fa-solid fa-diagram-project"></i></Link>
+        <Link className='toolbarElements' to='contact' smooth={true} duration={1000}><i id={toolsColor ? "light" : "dark"} class="fa-solid fa-address-card"></i></Link>
       </div>
 
     </div>

@@ -72,7 +72,6 @@
   background-color: transparent;
   border: none;
   transition: all ease-in-out .2s;
-
 }
 
 #dark {
@@ -81,7 +80,7 @@
 }
 
 #light {
-  color: var(--yellow);
+  color: var(--light-mode);
   font-size: 20px;
 }
 
@@ -803,6 +802,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  /* position:absolute; */
 }
 
 .contactTitle{
@@ -875,59 +875,6 @@ border: none;
 box-shadow: 0px 0px 13px 3px var(--yellow);
 }
 
-
-.inputbox input {
-  position: relative;
-  width: 100%;
-  padding: 20px 10px 10px;
-  background: transparent;
-  outline: none;
-  box-shadow: none;
-  border: none;
-  color: #23242a;
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  transition: 0.5s;
-  z-index: 10;
-  font-family: 'Poppins', 'sans-serif';
-}
-
-.inputbox span {
-  position: absolute;
-  left: 0;
-  padding: 20px 10px 10px;
-  font-size: 1em;
-  color: #8f8f8f;
-  letter-spacing: 00.05em;
-  transition: 0.5s;
-  pointer-events: none;
-}
-
-.inputbox input:valid ~span,
-.inputbox input:focus ~span {
-  color: #45f3ff;
-  transform: translateX(-10px) translateY(-34px);
-  font-size: 0,75em;
-}
-
-.inputbox i {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: #45f3ff;
-  border-radius: 4px;
-  transition: 0.5s;
-  pointer-events: none;
-  z-index: 9;
-}
-
-.inputbox input:valid ~i,
-.inputbox input:focus ~i {
-  height: 44px;
-}
-
 .contactLink{
   /* background-color: black; */
   z-index: 4;
@@ -989,6 +936,7 @@ box-shadow: 0px 0px 13px 3px var(--yellow);
   padding: 1rem;
   position: relative;
   height: 250px;
+  
 }
 
 .footerTxt{
@@ -1027,3 +975,181 @@ box-shadow: 0px 0px 13px 3px var(--yellow);
   letter-spacing: 1px;
   color: var(--light-mode);
 }
+
+
+
+
+/* Inputs code */
+
+/* 
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+  color: #45f3ff;
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0,75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+  height: 44px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #e8e8e8;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form {
+  --width-of-input: 200px;
+  --border-height: 1px;
+  --border-before-color: var(--light-mode);
+  --border-after-color: var(--yellow);
+  --input-hovered-color: #4985e01f;
+  position: relative;
+  width: var(--width-of-input);
+ }
+ /* styling of Input */
+ .input {
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+ /* styling of animated border */
+ .input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+ }
+ /* Hover on Input */
+ input:hover {
+  background: var(--input-hovered-color);
+ }
+ 
+ input:focus {
+  outline: none;
+ }
+ /* here is code of animated border */
+ input:focus ~ .input-border {
+  width: 100%;
+ }
+ /* === if you want to do animated border on typing === */
+ /* remove input:focus code and uncomment below code */
+ /* input:valid ~ .input-border{
+   width: 100%;
+ } */
