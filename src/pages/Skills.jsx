@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Toggle from '../components/toggle';
+import Toggle from '../components/Toggle';
 
 const Skills = ({lang}) => {
     const [skills, setSkill] = useState(false)
