@@ -1,6 +1,6 @@
 import React from 'react';
-import SoftSkills from '../Components/SoftSkills';
-import Technologies from '../Components/Technologies';
+import SoftSkills from './SoftSkills';
+import Technologies from './Technologies';
 
 const Toggle = ({ estado, setEstado, lang }) => {
     return (
