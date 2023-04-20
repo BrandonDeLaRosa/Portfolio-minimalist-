@@ -23,7 +23,7 @@ function App() {
     const scrollPX = window.scrollY;
     console.log(scrollPX);
 
-    if(window.scrollY >= 2526){
+    if(window.scrollY >= 2348){
       setToolsColor(true)
     }else{
       setToolsColor(false)
