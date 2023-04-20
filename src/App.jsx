@@ -13,8 +13,6 @@ import logo from './img/logoNbG2.png'
 import Footer from './components/Footer'
 
 
-
-
 function App() {
   const [darkTheme, setDarkTheme] = useState(true)
   const [english, setEnglish] = useState(true)
