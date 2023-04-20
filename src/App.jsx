@@ -10,7 +10,7 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import Home from './pages/Home'
 import logo from './img/logoNbG2.png'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 
 
 
