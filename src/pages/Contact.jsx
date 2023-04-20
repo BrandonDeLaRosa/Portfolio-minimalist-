@@ -8,7 +8,7 @@ const Contact = ({ dark }) => {
 
             <div className='contactBox'>
 
-                {/* <div class="form-control">
+                <div class="form-control">
                     <div class="inputbox" id='inputName'>
                         <input required="required" type="text" />
                         <span>Name</span>
@@ -22,7 +22,7 @@ const Contact = ({ dark }) => {
                         <span>Email</span>
                         <i></i>
                     </div>
-                </div> */}
+                </div>
 
 
 
@@ -36,14 +36,14 @@ const Contact = ({ dark }) => {
                         <label for="name">Email</label>
                 </div> */}
 
-                <div class="form">
+                {/* <div class="form">
                     <input class="input" placeholder="Name" required="" type="text" />
                     <span class="input-border"></span>
                 </div>
                 <div class="form">
                     <input class="input" placeholder="Email" required="" type="email" />
                     <span class="input-border"></span>
-                </div>
+                </div> */}
 
 
                 <textarea className={dark ? 'formText' : 'lightFormText'} name="Message" rows={7} cols={35} placeholder='   Hey! let´s work together...' required></textarea>
