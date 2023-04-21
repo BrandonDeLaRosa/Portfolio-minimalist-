@@ -1,5 +1,9 @@
 @media only screen and (min-width: 577px) {
 
+    .toolbar {
+        gap: 2.5rem;
+      }
+
     /*                  HOME             */
 .homeContainer {
     max-width: 500px; 
@@ -11,7 +15,7 @@
   
   .typeWriter{
     font-size: 25px;
-    height: 4rem;
+    height: 5rem;
   }
   
   .about{
@@ -156,6 +160,10 @@
   }
 
   /* ==============================FOOTER ==================== */
+
+  .footer{
+    height: 350px;
+  }
   
   .footerTxt{
     max-width: 400px;

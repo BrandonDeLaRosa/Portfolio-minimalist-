@@ -14,7 +14,7 @@
   --black: #000000;
   /* --yellow: rgb(255, 217, 0); */
   --yellow: #15e9f8;
-  --grey: rgba(213, 224, 224, 0.541);
+  --grey: rgba(213, 224, 224, 0.651);
 }
 
 
@@ -42,7 +42,6 @@
 
 .bodyContainer {
   width: 100%;
-  
 }
 
 /*               TOOLBAR                 */
@@ -58,7 +57,8 @@
 .toolbar {
   background-color: var(--grey);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 1.5rem;
   padding: 1rem;
   position: fixed;
@@ -270,21 +270,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*        SKILLS            */
 
 .skillsContainer {
@@ -340,14 +325,6 @@
     aspect-ratio: 3/2;
     object-fit: contain;
 }
-
-/* .techTxt{
-  font-size: 10px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  color: #15e9f8;
-} */
-
 
 .skillbox{
   display: flex;
@@ -470,125 +447,7 @@
   animation: textColor 3s linear infinite;
 }
 
-
-
-
-
-
 /*               TOGGLE bOX */
-
-
-
-
-
-
-
-.checkbox-wrapper-5 .check {
-  --size: 40px;
-  position: relative;
-  background: linear-gradient(90deg, var(--light-mode), var(--yellow));
-  line-height: 0;
-  perspective: 400px;
-  font-size: var(--size);
-}
-
-.checkbox-wrapper-5 .check input[type="checkbox"],
-  .checkbox-wrapper-5 .check label,
-  .checkbox-wrapper-5 .check label::before,
-  .checkbox-wrapper-5 .check label::after,
-  .checkbox-wrapper-5 .check {
-  appearance: none;
-  display: inline-block;
-  border-radius: var(--size);
-  border: 0;
-  transition: .35s ease-in-out;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.checkbox-wrapper-5 .check label {
-  width: calc(2.2 * var(--size));
-  height: var(--size);
-  background: #d7d7d7;
-  overflow: hidden;
-}
-
-.checkbox-wrapper-5 .check input[type="checkbox"] {
-  position: absolute;
-  z-index: 1;
-  width: calc(.8 * var(--size));
-  height: calc(.8 * var(--size));
-  top: calc(.1 * var(--size));
-  left: calc(.1 * var(--size));
-  background: linear-gradient(45deg, #dedede, #ffffff);
-  box-shadow: 0 6px 7px rgba(0,0,0,0.3);
-  outline: none;
-  margin: 0;
-}
-
-.checkbox-wrapper-5 .check input[type="checkbox"]:checked {
-  left: calc(1.3 * var(--size));
-}
-
-.checkbox-wrapper-5 .check input[type="checkbox"]:checked + label {
-  background: transparent;
-}
-
-.checkbox-wrapper-5 .check label::before,
-  .checkbox-wrapper-5 .check label::after {
-  content: "· ·";
-  position: absolute;
-  overflow: hidden;
-  left: calc(.15 * var(--size));
-  top: calc(.5 * var(--size));
-  height: var(--size);
-  letter-spacing: calc(-0.04 * var(--size));
-  color: #9b9b9b;
-  font-family: "Times New Roman", serif;
-  z-index: 2;
-  font-size: calc(.6 * var(--size));
-  border-radius: 0;
-  transform-origin: 0 0 calc(-0.5 * var(--size));
-  backface-visibility: hidden;
-}
-
-.checkbox-wrapper-5 .check label::after {
-  content: "●";
-  top: calc(.65 * var(--size));
-  left: calc(.2 * var(--size));
-  height: calc(.1 * var(--size));
-  width: calc(.35 * var(--size));
-  font-size: calc(.2 * var(--size));
-  transform-origin: 0 0 calc(-0.4 * var(--size));
-}
-
-.checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::before,
-  .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::after {
-  left: calc(1.55 * var(--size));
-  top: calc(.4 * var(--size));
-  line-height: calc(.1 * var(--size));
-  transform: rotateY(360deg);
-}
-
-.checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::after {
-  height: calc(.16 * var(--size));
-  top: calc(.55 * var(--size));
-  left: calc(1.6 * var(--size));
-  font-size: calc(.6 * var(--size));
-  line-height: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -663,46 +522,7 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.sfera3{
-  width:20%;
-  height: 10%;
-  background-color: var(--yellow);
-  position: absolute;
-  right: 0rem;
-  top: 120rem;
-  z-index: 0;
-  border-radius: 100%;
-}
-.sfera4{
-  width:10%;
-  height: 5%;
-  background-color: var(--yellow);
-  position: absolute;
-  right: 3rem;
-  top: 135rem;
-  z-index: 0;
-  border-radius: 100%;
-}
+/* =============================== PROJECTS  */
 
 .projectsContainer {
   /* height: 100vh; */
@@ -856,6 +676,55 @@ border: none;
 box-shadow: 0px 0px 13px 3px var(--yellow);
 }
 
+.submit{
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.submit {
+  border: 3px ridge var(--yellow);
+  outline: none;
+  background-color: transparent;
+  transition: .5s;
+  border-radius: .5em;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: transparent;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.submit::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.submit:hover::before, button:hover::after {
+  transform: scale(0)
+}
+
+.submit:hover {
+  box-shadow: inset 0px 0px 25px var(--yellow);
+}
+
+
+
 .contactLink{
   /* background-color: black; */
   z-index: 4;
@@ -890,18 +759,26 @@ box-shadow: 0px 0px 13px 3px var(--yellow);
 
 .fa-whatsapp:hover{
   color: var(--yellow);
+  transform: scale(1.1);
+  transition: .2s;
 }
 
 .fa-github:hover{
   color: var(--yellow);
+  transform: scale(1.1);
+  transition: .2s;
 }
 
 .fa-file:hover{
   color: var(--yellow);
+  transform: scale(1.1);
+  transition: .2s;
 }
 
 .fa-linkedin-in:hover{
   color: var(--yellow);
+  transform: scale(1.1);
+  transition: .2s;
 }
 
 
@@ -1013,123 +890,3 @@ box-shadow: 0px 0px 13px 3px var(--yellow);
 .inputbox input:focus ~i {
   height: 44px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.inputGroup {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 1em 0 1em 0;
-  max-width: 190px;
-  position: relative;
-}
-
-.inputGroup input {
-  font-size: 100%;
-  padding: 0.8em;
-  outline: none;
-  border: 2px solid rgb(200, 200, 200);
-  background-color: transparent;
-  border-radius: 20px;
-  width: 100%;
-}
-
-.inputGroup label {
-  font-size: 100%;
-  position: absolute;
-  left: 0;
-  padding: 0.8em;
-  margin-left: 0.5em;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  color: rgb(100, 100, 100);
-}
-
-.inputGroup :is(input:focus, input:valid)~label {
-  transform: translateY(-50%) scale(.9);
-  margin: 0em;
-  margin-left: 1.3em;
-  padding: 0.4em;
-  background-color: #e8e8e8;
-}
-
-.inputGroup :is(input:focus, input:valid) {
-  border-color: rgb(150, 150, 200);
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.form {
-  --width-of-input: 200px;
-  --border-height: 1px;
-  --border-before-color: var(--light-mode);
-  --border-after-color: var(--yellow);
-  --input-hovered-color: #4985e01f;
-  position: relative;
-  width: var(--width-of-input);
- }
- /* styling of Input */
- .input {
-  color: #fff;
-  font-size: 0.9rem;
-  background-color: transparent;
-  width: 100%;
-  box-sizing: border-box;
-  padding-inline: 0.5em;
-  padding-block: 0.7em;
-  border: none;
-  border-bottom: var(--border-height) solid var(--border-before-color);
-  font-family: 'Poppins';
-  font-weight: bold;
-}
- /* styling of animated border */
- .input-border {
-  position: absolute;
-  background: var(--border-after-color);
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  transition: 0.3s;
- }
- /* Hover on Input */
- input:hover {
-  background: var(--input-hovered-color);
- }
- 
- input:focus {
-  outline: none;
- }
- /* here is code of animated border */
- input:focus ~ .input-border {
-  width: 100%;
- }
- /* === if you want to do animated border on typing === */
- /* remove input:focus code and uncomment below code */
- /* input:valid ~ .input-border{
-   width: 100%;
- } */

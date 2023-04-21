@@ -1,0 +1,246 @@
+@media only screen and (min-width: 1080px) {
+
+
+    /*                  HOME             */
+    .homeContainer {
+        max-width: 800px;
+    }
+
+    .homeTitle {
+        font-size: 23px;
+    }
+
+    .typeWriter {
+        font-size: 35px;
+        height: 7rem;
+    }
+
+    .about {
+        gap: 1rem;
+    }
+
+    .aDwnTp {
+    font-size: 21px;
+  }
+  
+  .dwnTp {
+    font-size: 21px;
+  }
+  
+  .homeTitle2 {
+    font-size: 23px;
+  }
+  
+  .homeTxt3 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  .extras{
+    gap: 4rem;
+  }
+  
+  .xtraBx{
+    font-size: 23px;
+    height: 12rem;
+    max-width: 190px;
+  }
+  
+  .exp{
+    margin-top: -2.6rem;
+  }
+  
+  .xBA1{
+    margin-top: 2.8rem;
+  }
+  .xBA2{
+    margin-top: 6.9rem;
+  }
+  
+  .fa-medapps{
+    margin-top: -4rem;
+  }
+  
+  
+  /*        SKILLS            */
+  
+  .skillsContainer {
+    padding: 1rem;
+  }
+  
+  .skillsTitle{
+    font-size: 40px;
+  }
+  
+  .technologies{
+    gap: 2rem;
+    padding: 3rem;
+    max-height: 700px;
+    max-width: 450px;
+  }
+
+  .technologies::-webkit-scrollbar{
+    width: 5px;
+  }
+  .technologies::-webkit-scrollbar-track{
+    background-color: rgba(13, 31, 99, 0.651);
+    border-radius: 5rem;
+  }
+  .technologies::-webkit-scrollbar-thumb{
+    background: #d1d1d1;
+    /* border-radius: 5rem; */
+  }
+
+  .imgText{
+    font-size: 20px;
+  }
+  
+  .techImgs{
+      height: 65px;
+      width: 65%;
+  }
+
+
+
+  .list{
+    gap: 2rem;
+  }
+  
+  .secList{
+    gap: .8rem;
+
+  }
+  
+  .listItem{
+    font-size: 22px;
+  }
+  
+  .fa-right-long {
+    font-size: 15px;
+    top: 8px;
+    right: 10px;
+}
+  
+  .process{
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .process::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: var(--yellow);
+    -webkit-text-stroke: 0vw var(--yellow);
+    /* border-right: 2px solid orange; */
+    overflow: hidden;
+    animation: textColor 3s linear infinite;
+  }
+
+  /* ============================================================ PROJECTS */
+  
+  .projectTitle1{
+    font-size: 40px;
+  }
+  
+  .gifContainer{
+    max-width: 450px;
+    max-height: 700px;
+  }
+
+  .gifContainer::-webkit-scrollbar{
+    width: 5px;
+  }
+  .gifContainer::-webkit-scrollbar-track{
+    background-color: rgba(13, 31, 99, 0.651);
+    border-radius: 5rem;
+  }
+  .gifContainer::-webkit-scrollbar-thumb{
+    background: #d1d1d1;
+    /* border-radius: 5rem; */
+  }
+  
+  
+  .gifBox{
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .frontTitle{
+    font-family: 'Roboto';
+    margin-bottom: 1rem;
+  }
+  
+  
+  /* ==========================================================   CONTACT */
+  .contactTitle{
+   font-size: 40px;
+  }
+  
+  .inputbox {
+    width: 400px;
+    font-size: 18px;
+  }
+  
+  .formText{
+    width: 450px;
+    height: 12rem;
+    font-size: 17px;
+  }
+
+  .lightFormText{
+    width: 350px;
+  }
+  
+  
+  .submit {
+  width: 280px;
+  font-size: 30px;
+  cursor: pointer;
+  }
+  
+  .contactLink{
+    gap: 5rem;
+  }
+  
+  .fa-whatsapp{
+    font-size: 45px;
+  }
+  
+  .fa-github{
+    font-size: 45px;
+  }
+  
+  .fa-file{
+    font-size: 45px;
+  }
+  
+  .fa-linkedin-in{
+    font-size: 45px;
+  }
+
+  /* ==============================FOOTER ==================== */
+  
+  .footerTxt{
+    max-width: 400px;
+    font-size: 19px;
+  }
+  
+  .footerLogo{
+    width: 60px;
+    height: 40px;
+  }
+  
+  .menuFoot{
+    max-width: 350px;
+    gap: 2rem;
+  }
+  
+  .menuOpt{
+    font-size: 19px;
+  }
+}
