@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import {Link, ScrollLink} from 'react-scroll'
 import './App.css'
+import './tabletSize.css'
 import Inicio from './paginas/Inicio'
 import Habilidades from './paginas/Habilidades'
 import Proyectos from './paginas/Proyectos'
@@ -23,7 +24,7 @@ function App() {
     const scrollPX = window.scrollY;
     console.log(scrollPX);
 
-    if(window.scrollY >= 2348){
+    if(window.scrollY >= 2128){
       setToolsColor(true)
     }else{
       setToolsColor(false)
