@@ -37,14 +37,14 @@ function App() {
       <Link className='lightLogo' to='home'  smooth={true} duration={1000}><img className='logo' src={logo} alt="logo" /></Link>
 
       <div className='bodyContainer'>
-      {english ? <Home /> : <Inicio />}
-      {english ? <Skills lang={english} /> : <Habilidades lang={english} />}
-      {english ? <Projects lang={english}/> : <Proyectos lang={english}/>}
+      {english ? <Home dark={darkTheme} /> : <Inicio dark={darkTheme} />}
+      {english ? <Skills lang={english} dark={darkTheme}/> : <Habilidades lang={english} dark={darkTheme} />}
+      {english ? <Projects lang={english} dark={darkTheme}/> : <Proyectos lang={english} dark={darkTheme}/>}
       {english ? <Contact dark={darkTheme} /> : <Contacto dark={darkTheme} />}
       <Footer lang={english}/>
       </div>
 
-      <div className='toolbar'>
+      <div className={darkTheme? 'toolbar':'toolbarLight'}>
         <button className='toolbarElements' onClick={() => setDarkTheme(!darkTheme)}>
           {darkTheme ? 
           <i id={toolsColor ? "light" : "dark"} class="fa-regular fa-sun">

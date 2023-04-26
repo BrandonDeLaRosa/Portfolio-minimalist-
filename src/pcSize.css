@@ -26,6 +26,56 @@
   .dwnTp {
     font-size: 21px;
   }
+
+  .aDwnTp{
+    background-color: transparent;
+    color: var(--yellow);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .dwnTp {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge var(--yellow);
+    outline: none;
+    background-color: transparent;
+    transition: .5s;
+    border-radius: .5em;
+  }
+  
+  .dwnTp::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: transparent;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .dwnTp::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: transparent;
+    transition: 0.5s;
+  }
+  
+  .dwnTp:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  .dwnTp:hover {
+    box-shadow: inset 0px 0px 25px var(--yellow);
+  }
   
   .homeTitle2 {
     font-size: 23px;

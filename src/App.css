@@ -10,11 +10,13 @@
 
 :root {
   --dark-mode: #0B0B0C;
-  --light-mode: #ffffff;
+  --light-mode: #eeeded;
+  --letters-white: #b9b9b9;
   --black: #000000;
   /* --yellow: rgb(255, 217, 0); */
   --yellow: #15e9f8;
-  --grey: rgba(213, 224, 224, 0.651);
+  --light-grey: rgba(181, 194, 194, 0.651);
+  --grey: rgba(27, 39, 39, 0.65);
 }
 
 
@@ -23,7 +25,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--dark-mode);
-  color: var(--light-mode);
+  color: var(--letters-white);
   height: 100%;
   transition: var(--dark-mode) 0.9s ease-in-out;
   /* background-image: linear-gradient(rgba(2, 206, 128, 0.795), rgb(3, 3, 3)); */
@@ -56,6 +58,19 @@
 
 .toolbar {
   background-color: var(--grey);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  border-radius: 1rem;
+  z-index: 5;
+}
+
+.toolbarLight {
+  background-color: var(--light-grey);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -117,6 +132,17 @@
 }
 
 .typeWriter{
+  color: var(--light-mode);
+  text-align: center;
+  margin: 1rem 0rem 0rem;
+  font-weight: bolder;
+  font-family: 'Roboto';
+  font-size: 20px;
+  height: 4rem;
+}
+
+.typeWriterLight{
+  /* color: var(--light-mode); */
   text-align: center;
   margin: 1rem 0rem 0rem;
   font-weight: bolder;
@@ -194,6 +220,7 @@
   gap: 1rem;
   border-top: 1px solid var(--yellow);
   margin-top: 3rem ;
+  padding-top: 1rem;
 }
 
 .homeTitle2 {
@@ -201,6 +228,14 @@
   font-size: 13px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  color: var(--light-mode);
+}
+.homeTitle2Light {
+  margin:1rem 0rem-.5rem;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  /* color: var(--light-mode); */
 }
 
 .homeTxt3 {
@@ -217,8 +252,29 @@
   justify-content: center;
 }
 
+b{
+  color: var(--light-mode);
+}
+
 .xtraBx{
   background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 15px;
+  width: 50%;
+  border-radius: .5rem;
+  padding: 2px;
+  height: 10rem;
+  max-width: 126px;
+}
+.xtraBxLight{
+  background-color: var(--light-grey);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -289,6 +345,13 @@
   text-align: center;
   font-family: 'Roboto';
   margin-top: .5rem;
+  color: var(--light-mode);
+}
+.skillsTitleLight{
+  text-align: center;
+  font-family: 'Roboto';
+  margin-top: .5rem;
+  /* color: var(--light-mode); */
 }
 
 .technologies{
@@ -304,6 +367,22 @@
   max-height: 600px;
   max-width: 276px;
   background-color: var(--grey);
+  border-radius: 1rem;
+  /* border: 1px solid var(--yellow); */
+}
+.technologiesLight{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 85%;
+  padding: 1rem;
+  margin-top: 1rem;
+  overflow-y: scroll;
+  max-height: 600px;
+  max-width: 276px;
+  background-color: var(--light-grey);
   border-radius: 1rem;
   /* border: 1px solid var(--yellow); */
 }
@@ -370,6 +449,15 @@
   padding: 2rem;
   /* border: 1px solid var(--yellow); */
   background-color: var(--grey);
+  border-radius: 1rem;
+}
+.secListLight{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 2rem;
+  /* border: 1px solid var(--yellow); */
+  background-color: var(--light-grey);
   border-radius: 1rem;
 }
 
@@ -536,6 +624,13 @@
   text-align: center;
   margin-bottom: 1rem;
   font-family: 'Roboto';
+  color: var(--light-mode);
+}
+.projectTitle1Light{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Roboto';
+  /* color: var(--light-mode); */
 }
 
 .togglePCont{
@@ -559,6 +654,23 @@
   max-height: 600px;
   max-width: 276px;
   background-color: var(--grey);
+  border-radius: 1rem;
+  /* border: 1px solid var(--yellow); */
+}
+.gifContainerLight{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem auto 0rem;
+  max-width: 350px;
+  overflow-y: scroll; 
+  scrollbar-width: thin;
+  max-height: 600px;
+  max-width: 276px;
+  background-color: var(--light-grey);
   border-radius: 1rem;
   /* border: 1px solid var(--yellow); */
 }
@@ -592,6 +704,7 @@
 
 .frontTitle{
   font-family: 'Roboto';
+  color: var(--light-mode);
 }
 
 
@@ -610,6 +723,13 @@
  text-align: center;
  margin-top: 1.5rem;
  font-family: 'Roboto';
+ color: var(--light-mode);
+}
+.contactTitleLight{
+ text-align: center;
+ margin-top: 1.5rem;
+ font-family: 'Roboto';
+ /* color: var(--light-mode); */
 }
 
 .contactBox{
@@ -661,6 +781,7 @@ border: 1px solid var(--yellow);
 background-color: var(--yellow);
 }
 
+
 .submit {
 margin: 1rem 0rem 2rem;
 width: 152px;
@@ -672,6 +793,7 @@ font-weight: bold;
 color: white;
 border: none;
 }
+
 .submit:focus {
 box-shadow: 0px 0px 13px 3px var(--yellow);
 }
@@ -694,7 +816,7 @@ box-shadow: 0px 0px 13px 3px var(--yellow);
 .submit::after {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -1000px;
   left: 3%;
   width: 95%;
   height: 40%;
@@ -707,7 +829,7 @@ box-shadow: 0px 0px 13px 3px var(--yellow);
   content: "";
   transform-origin: center;
   position: absolute;
-  top: 80%;
+  top: -100%;
   left: 3%;
   width: 95%;
   height: 40%;
@@ -722,6 +844,90 @@ box-shadow: 0px 0px 13px 3px var(--yellow);
 .submit:hover {
   box-shadow: inset 0px 0px 25px var(--yellow);
 }
+
+
+
+
+.submitLight {
+  margin: 1rem 0rem 2rem;
+  width: 152px;
+  background-color: var(--yellow);
+  padding: .5rem;
+  border-radius: .5rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--black);
+  border: none;
+  }
+  
+  .submitLight:focus {
+  box-shadow: 0px 0px 13px 3px var(--yellow);
+  }
+  
+  .submitLight{
+  
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .submitLight {
+    border: 3px ridge var(--yellow);
+    outline: none;
+    background-color: transparent;
+    transition: .5s;
+    border-radius: .5em;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .submitLight::after {
+    content: "";
+    position: absolute;
+    top: -1000px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: transparent;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .submitLight::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: -100%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: transparent;
+    transition: 0.5s;
+  }
+  
+  .submitLight:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  .submitLight:hover {
+    box-shadow: inset 0px 0px 25px var(--yellow);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

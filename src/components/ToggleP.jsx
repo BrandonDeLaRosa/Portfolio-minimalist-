@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Front from '../components/Front';
 import Back from '../components/Back';
 
-const ToggleP = ({lang}) => {
+const ToggleP = ({lang,dark}) => {
     const [front, setFront] = useState(true)
     return (
         <div className='togglePCont'>
@@ -19,7 +19,7 @@ const ToggleP = ({lang}) => {
                     <div class="toggle-switch-handle"></div>
                 </div>
             </label>
-            {front? <Front lang={lang}/> : <Back lang={lang}/>}
+            {front? <Front lang={lang} dark={dark}/> : <Back lang={lang} dark={dark}/>}
         </div>
     );
 };

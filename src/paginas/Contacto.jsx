@@ -4,7 +4,7 @@ import cv from '../components/cv.pdf'
 const Contacto = ({ dark }) => {
     return (
         <div className='contactContainer' id='contact'>
-            <h1 className='contactTitle'>Contactame</h1>
+            <h1 className={dark? 'contactTitle':'contactTitleLight'}>Contactame</h1>
 
             <div className='contactBox'>
 
@@ -25,7 +25,7 @@ const Contacto = ({ dark }) => {
                 </div>
                 <textarea className={dark ? 'formText' : 'lightFormText'} name="Message" rows={7} cols={35} placeholder='   Hola, trabajemos juntos...' required></textarea>
 
-                <button className='submit' type="submit">
+                <button className={dark?'submit':'submitLight'} type="submit">
                     Enviar
                 </button>
 

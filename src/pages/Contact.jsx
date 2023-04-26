@@ -4,7 +4,7 @@ import cv from '../components/cv.pdf'
 const Contact = ({ dark }) => {
     return (
         <div className='contactContainer' id='contact'>
-            <h1 className='contactTitle'>Contact me</h1>
+            <h1 className={dark? 'contactTitle':'contactTitleLight'}>Contact me</h1>
 
             <div className='contactBox'>
 
@@ -24,31 +24,9 @@ const Contact = ({ dark }) => {
                     </div>
                 </div>
 
-
-
-                {/* <div class="inputGroup">
-                    <input type="text" required="" autocomplete="off"/>
-                        <label for="name">Name</label>
-                </div>
-
-                <div class="inputGroup">
-                    <input type="email" required="" autocomplete="off"/>
-                        <label for="name">Email</label>
-                </div> */}
-
-                {/* <div class="form">
-                    <input class="input" placeholder="Name" required="" type="text" />
-                    <span class="input-border"></span>
-                </div>
-                <div class="form">
-                    <input class="input" placeholder="Email" required="" type="email" />
-                    <span class="input-border"></span>
-                </div> */}
-
-
                 <textarea className={dark ? 'formText' : 'lightFormText'} name="Message" rows={7} cols={35} placeholder='   Hey! let´s work together...' required></textarea>
 
-                <button className='submit' type="submit">
+                <button className={dark?'submit':'submitLight'} type="submit">
                     Submit
                 </button>
 

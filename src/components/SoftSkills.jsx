@@ -1,10 +1,10 @@
 import React from 'react';
 
-const SoftSkills = ({ lang }) => {
+const SoftSkills = ({ lang,dark }) => {
     return (
         <div className='list'>
 
-            <section className='secList'>
+            <section className={dark? 'secList' : 'secListLight'}>
                 <div className='skillbox'>
                     <i class="fa-solid fa-right-long "></i>
                     <h3 className='listItem' data-text={lang ? "Proactive" : "Proactivo"}  >{lang ? "Proactive" : "Proactivo"}</h3>
@@ -31,7 +31,7 @@ const SoftSkills = ({ lang }) => {
                 </div>
             </section>
 
-                <section className='secList'>
+                <section className={dark? 'secList' : 'secListLight'}>
                     <div className='skillbox'>
                         <i class="fa-solid fa-right-long"></i>
                         <h3 className='listItem' data-text={lang ? "Adaptability" : "Adaptabilidad"}>{lang ? "Adaptability" : "Adaptabilidad"}</h3>

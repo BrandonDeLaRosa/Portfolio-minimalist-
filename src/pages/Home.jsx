@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 import cv from '../components/cv.pdf'
 
 
-const Home = () => {
+const Home = ({dark}) => {
     return (
         <div className='homeContainer' id='home'>
             
@@ -11,7 +11,7 @@ const Home = () => {
                 <h1 className='homeTitle'>Hello, i am!</h1>
             </div>
 
-            <section className='typeWriter'>
+            <section className={dark? 'typeWriter' : 'typeWriterLight'}>
 
                 <Typewriter
                     options={{
@@ -35,7 +35,7 @@ const Home = () => {
                 <button className='dwnTp'><a className='aDwnTp' download="Cv BrandonDeLaRosa" href={cv}>Download CV</a></button>
                 
                 <div className='homeTxt2'>
-                    <h1 className='homeTitle2'>About me</h1>
+                    <h1 className={dark? 'homeTitle2' : 'homeTitle2Light'}>About me</h1>
                     {/* <div className='box1'></div> */}
                     <p className='homeTxt3'>
                         Full stack web developer,
@@ -49,12 +49,12 @@ const Home = () => {
             </section>
             
             <section className='extras'>
-                <div className='xtraBx'>
+                <div className={dark? 'xtraBx' : 'xtraBxLight'}>
                     <i class="fa-regular fa-handshake"></i>
                     <p><b>Languages</b></p>
                     <p className='xBA'>English C 1 / Spanish Native</p>
                 </div>
-                <div className='xtraBx'>
+                <div className={dark? 'xtraBx' : 'xtraBxLight'}>
                     <i class="fa-brands fa-medapps"></i>
                     <p className='exp'><b>Experience</b></p>
                     <p className='xBA1'>1 year </p> <br />

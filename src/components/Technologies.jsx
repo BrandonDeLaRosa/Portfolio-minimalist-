@@ -20,9 +20,9 @@ import  angular from '../img/skillsImgs/angularLogo.png'
 import python from '../img/skillsImgs/python.png'
 import router from '../img/skillsImgs/router.webp'
 
-const Technologies = ({lang}) => {
+const Technologies = ({lang,dark}) => {
     return (
-        <div className='technologies'>
+        <div className={dark? 'technologies' : 'technologiesLight'}>
 
 
             <div className='imgText'>

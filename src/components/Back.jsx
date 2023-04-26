@@ -4,11 +4,11 @@ import eCommCode from '../gifs/gifsBackEnd/Ecom.gif'
 import foroCode from '../gifs/gifsBackEnd/foro.gif'
 import rest from '../gifs/gifsBackEnd/rest.gif'
 
-const Back = ({lang}) => {
+const Back = ({lang,dark}) => {
     return (
         <div>
-            <section className='gifContainer'>
-                <h2 className='frontTitle'>{lang ? 'Back-End Proyects' : 'Proyectos Back-End'}</h2>
+            <section className={dark? 'gifContainer' : 'gifContainerLight'}>
+                <h2 className='frontTitle'>{lang ? 'Back-End Projects' : 'Proyectos Back-End'}</h2>
 
                 <div className='gifBox'>
                     <h3 className='projectTitle' data-text="Rick&Morty">eCommerce Diagram</h3>

@@ -4,12 +4,12 @@ import weather from '../gifs/weather.gif'
 import pokedex from '../gifs/pokedex.gif'
 import ecom from '../gifs/ecom.gif'
 
-const Front = ({ lang }) => {
+const Front = ({ lang,dark }) => {
 
     return (
         <div>
-            <section className='gifContainer'>
-                <h2 className='frontTitle'>{lang ? 'Front-End Proyects' : 'Proyectos Front-End'}</h2>
+            <section className={dark? 'gifContainer' : 'gifContainerLight'}>
+                <h2 className='frontTitle'>{lang ? 'Front-End Projects' : 'Proyectos Front-End'}</h2>
 
                 <div className='gifBox'>
                     <h3 className='projectTitle' data-text="Rick&Morty">Rick&Morty</h3>

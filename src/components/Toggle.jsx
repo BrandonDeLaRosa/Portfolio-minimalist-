@@ -2,7 +2,7 @@ import React from 'react';
 import SoftSkills from './SoftSkills';
 import Technologies from './Technologies';
 
-const Toggle = ({ estado, setEstado, lang }) => {
+const Toggle = ({ estado, setEstado, lang, dark }) => {
     return (
         <div className='toggleBox'>
             {/* <div class="checkbox-wrapper-5">
@@ -21,7 +21,7 @@ const Toggle = ({ estado, setEstado, lang }) => {
 
 
             <div className='techSkill'>
-                {estado ? <SoftSkills lang={lang} /> : <Technologies lang={lang} />}
+                {estado ? <SoftSkills lang={lang} dark={dark} /> : <Technologies lang={lang} dark={dark}/>}
             </div>
 
         </div>
