@@ -8,7 +8,7 @@ const Skills = ({lang, dark}) => {
          <h1 className={dark? 'skillsTitle' : 'skillsTitleLight'}>{skills ? "Soft skills" : "Technologies"}</h1>
            <div className='techSkillsBox'>
             
-                <Toggle estado={skills} setEstado={setSkill} lang={lang}/>
+                <Toggle estado={skills} setEstado={setSkill} lang={lang} dark={dark}/>
                 <div className='sfera'></div>
                 <div className='sfera2'></div>
                 
