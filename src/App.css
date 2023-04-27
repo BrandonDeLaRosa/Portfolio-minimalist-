@@ -369,7 +369,6 @@ b{
   max-width: 276px;
   background-color: var(--grey);
   border-radius: 1rem;
-  /* border: 1px solid var(--yellow); */
 }
 .technologiesLight{
   display: flex;
@@ -385,40 +384,7 @@ b{
   max-width: 276px;
   background-color: var(--light-grey);
   border-radius: 1rem;
-  /* border: 1px solid var(--yellow); */
 }
-/* .technologies{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  height: 85%;
-  padding: 1rem;
-  margin-top: 1rem;
-  overflow-y: scroll;
-  max-height: 600px;
-  max-width: 276px;
-  background-color: var(--grey);
-  border-radius: 1rem;
-
-}
-.technologiesLight{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  height: 85%;
-  padding: 1rem;
-  margin-top: 1rem;
-  overflow-y: scroll;
-  max-height: 600px;
-  max-width: 276px;
-  background-color: var(--light-grey);
-  border-radius: 1rem;
-  
-} */
 
 .imgText{
   display: flex;
@@ -690,6 +656,7 @@ b{
   border-radius: 1rem;
   /* border: 1px solid var(--yellow); */
 }
+
 .gifContainerLight{
   display: flex;
   justify-content: center;
@@ -738,6 +705,14 @@ b{
 .frontTitle{
   font-family: 'Roboto';
   color: var(--light-mode);
+  margin: .5rem;
+  text-align: center;
+}
+
+.frontTitleLight{
+  font-family: 'Roboto';
+ margin: .5rem;
+  text-align: center;
 }
 
 

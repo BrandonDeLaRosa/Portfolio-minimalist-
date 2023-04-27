@@ -7,8 +7,8 @@ import rest from '../gifs/gifsBackEnd/rest.gif'
 const Back = ({lang,dark}) => {
     return (
         <div>
+                <h2 className={dark? 'frontTitle' : 'frontTitleLight'}>{lang ? 'Back-End Projects' : 'Proyectos Back-End'}</h2>
             <section className={dark? 'gifContainer' : 'gifContainerLight'}>
-                <h2 className='frontTitle'>{lang ? 'Back-End Projects' : 'Proyectos Back-End'}</h2>
 
                 <div className='gifBox'>
                     <h3 className='projectTitle' data-text="Rick&Morty">eCommerce Diagram</h3>

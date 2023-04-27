@@ -35,6 +35,7 @@ const Contacto = ({ dark }) => {
                     <a href="https://github.com/BrandonDeLaRosa" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="https://wa.me/5522979911?text=Hola%20me%20interesa%20ponerme%20en%20contacto%20contigo. " target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </section>
+                
             </div>
         </div>
     );

@@ -8,8 +8,8 @@ const Front = ({ lang,dark }) => {
 
     return (
         <div>
+                <h2 className={dark? 'frontTitle' : 'frontTitleLight'}>{lang ? 'Front-End Projects' : 'Proyectos Front-End'}</h2>
             <section className={dark? 'gifContainer' : 'gifContainerLight'}>
-                <h2 className='frontTitle'>{lang ? 'Front-End Projects' : 'Proyectos Front-End'}</h2>
 
                 <div className='gifBox'>
                     <h3 className='projectTitle' data-text="Rick&Morty">Rick&Morty</h3>

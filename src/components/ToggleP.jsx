@@ -6,12 +6,6 @@ const ToggleP = ({lang,dark}) => {
     const [front, setFront] = useState(true)
     return (
         <div className='togglePCont'>
-            {/* <div class="checkbox-wrapper-5">
-                <div class="check">
-                    <input type="checkbox" id="check-5" onClick={() => setEstado(!estado)} />
-                    <label for="check-5"></label>
-                </div>
-            </div> */}
 
             <label class="toggle-switch">
                 <input type="checkbox" onClick={() => setFront(!front)}/>

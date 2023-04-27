@@ -124,8 +124,17 @@
   
   .frontTitle{
     font-family: 'Roboto';
-    margin-bottom: 1rem;
+    color: var(--light-mode);
+    margin: .8rem;
+    text-align: center;
   }
+  
+  .frontTitleLight{
+    font-family: 'Roboto';
+   margin: .8rem;
+    text-align: center;
+  }
+  
   
   
   /* ==========================================================   CONTACT */
