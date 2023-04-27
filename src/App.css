@@ -356,11 +356,12 @@ b{
 
 .technologies{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  height: 85%;
+  /* height: 85%; */
   padding: 1rem;
   margin-top: 1rem;
   overflow-y: scroll;
@@ -386,6 +387,38 @@ b{
   border-radius: 1rem;
   /* border: 1px solid var(--yellow); */
 }
+/* .technologies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 85%;
+  padding: 1rem;
+  margin-top: 1rem;
+  overflow-y: scroll;
+  max-height: 600px;
+  max-width: 276px;
+  background-color: var(--grey);
+  border-radius: 1rem;
+
+}
+.technologiesLight{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 85%;
+  padding: 1rem;
+  margin-top: 1rem;
+  overflow-y: scroll;
+  max-height: 600px;
+  max-width: 276px;
+  background-color: var(--light-grey);
+  border-radius: 1rem;
+  
+} */
 
 .imgText{
   display: flex;

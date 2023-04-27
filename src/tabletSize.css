@@ -3,6 +3,9 @@
     .toolbar {
         gap: 2.5rem;
       }
+    .toolbarLight {
+        gap: 2.5rem;
+      }
 
     /*                  HOME             */
 .homeContainer {
@@ -85,6 +88,12 @@
     max-height: 600px;
     max-width: 350px;
   }
+  .technologiesLight{
+    gap: 2rem;
+    padding: 2rem;
+    max-height: 600px;
+    max-width: 350px;
+  }
   .imgText{
     font-size: 17px;
   }
@@ -101,6 +110,9 @@
   }
   
   .gifContainer{
+    max-width: 350px;
+  }
+  .gifContainerLight{
     max-width: 350px;
   }
   
@@ -135,6 +147,10 @@
   
   
   .submit {
+  width: 210px;
+  font-size: 25px;
+  }
+  .submitLight {
   width: 210px;
   font-size: 25px;
   }
