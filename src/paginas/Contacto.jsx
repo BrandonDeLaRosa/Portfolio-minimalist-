@@ -14,10 +14,11 @@ const Contacto = ({ dark }) => {
   
       emailjs.sendForm('service_mxvrvg8', 'template_gvywpeh', form.current, 'QaoZuJq5ETT2r1MbN')
         .then((result) => {
-            
             console.log(result.text);
+            alert("Su mensaje fue enviado exitosamente.")
         }, (error) => {
             console.log(error.text);
+            alert("Error, su mensaje no fue enviado.")
         });
         setName("")
         setEmail("")

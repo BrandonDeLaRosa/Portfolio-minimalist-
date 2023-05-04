@@ -17,8 +17,10 @@ const Contact = ({ dark }) => {
         .then((result) => {
             
             console.log(result.text);
+            alert("Your message was send successfully")
         }, (error) => {
             console.log(error.text);
+            alert("Error, please try again.")
         });
         setName("")
         setEmail("")
