@@ -1,16 +1,38 @@
-import React from 'react';
-import cv from '../components/cv.pdf'
+import React, { useRef, useState } from 'react';
+import cv from '../components/cv.pdf';
+import emailjs from '@emailjs/browser';
 
 const Contacto = ({ dark }) => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_mxvrvg8', 'template_gvywpeh', form.current, 'QaoZuJq5ETT2r1MbN')
+        .then((result) => {
+            
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        setName("")
+        setEmail("")
+        setMessage("")
+    }; 
     return (
-        <div className='contactContainer' id='contact'>
+        <form className='contactContainer' id='contact' ref={form} onSubmit={sendEmail}>
             <h1 className={dark? 'contactTitle':'contactTitleLight'}>Contactame</h1>
 
             <div className='contactBox'>
 
                 <div class="form-control">
                     <div class="inputbox" id='inputName'>
-                        <input required="required" type="text" />
+                        <input required="required" type="text" name='to_name' 
+                        value={name} onChange={(e) => setName(e.target.value)} />
                         <span>Nombre</span>
                         <i></i>
                     </div>
@@ -18,12 +40,14 @@ const Contacto = ({ dark }) => {
 
                 <div class="form-control">
                     <div class="inputbox" id='inputEmail'>
-                        <input required="required" type="text" />
+                        <input required="required" type="text" name='from_name' 
+                        value={email} onChange={(e) => setEmail(e.target.value)} />
                         <span>Correo</span>
                         <i></i>
                     </div>
                 </div>
-                <textarea className={dark ? 'formText' : 'lightFormText'} name="Message" rows={7} cols={35} placeholder='   Hola, trabajemos juntos...' required></textarea>
+                <textarea className={dark ? 'formText' : 'lightFormText'} name="message" rows={7} cols={35} placeholder='   Hola, trabajemos juntos...' required
+                value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
 
                 <button className={dark?'submit':'submitLight'} type="submit">
                     Enviar
@@ -37,7 +61,7 @@ const Contacto = ({ dark }) => {
                 </section>
                 
             </div>
-        </div>
+        </form>
     );
 };
 

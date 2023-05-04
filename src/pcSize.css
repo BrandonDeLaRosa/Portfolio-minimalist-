@@ -227,6 +227,7 @@
     max-height: 600px;
     max-width: 1000px;
     margin-top: 2rem; 
+    overflow-y: hidden;
   }
   .gifContainerLight{
     display: flex;
@@ -239,6 +240,7 @@
     max-height: 600px;
     max-width: 1000px;
     margin-top: 2rem; 
+    overflow-y: hidden;
   }
 
   .projectTitle{
