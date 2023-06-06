@@ -14,6 +14,10 @@
         font-size: 35px;
         height: 7rem;
     }
+    .typeWriterLight {
+        font-size: 35px;
+        height: 7rem;
+    }
 
     .about {
         gap: 1rem;
@@ -80,6 +84,9 @@
   .homeTitle2 {
     font-size: 23px;
   }
+  .homeTitle2Light {
+    font-size: 23px;
+  }
   
   .homeTxt3 {
     font-size: 25px;
@@ -91,6 +98,11 @@
   }
   
   .xtraBx{
+    font-size: 23px;
+    height: 12rem;
+    max-width: 190px;
+  }
+  .xtraBxLight{
     font-size: 23px;
     height: 12rem;
     max-width: 190px;
@@ -284,14 +296,22 @@
     width: 450px;
     height: 12rem;
     font-size: 17px;
+    /* background-color: brown; */
   }
 
   .lightFormText{
-    width: 350px;
+    width: 450px;
+    height: 12rem;
+    font-size: 17px;
   }
   
   
   .submit {
+  width: 280px;
+  font-size: 30px;
+  cursor: pointer;
+  }
+  .submitLight {
   width: 280px;
   font-size: 30px;
   cursor: pointer;
